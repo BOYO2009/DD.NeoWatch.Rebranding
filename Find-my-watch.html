@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find YOUR watch</title>
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  
+    <style>
+      body,
+      h2,
+      p {
+        color: rgb(255, 255, 255);
+      }
+      label,
+      p {
+        color: rgb(255, 255, 255);
+      }
+      body {
+        background: url("https://i.pinimg.com/736x/a1/8d/dc/a18ddc3b08d56645651811f64d16afa9.jpg")
+          no-repeat center center fixed;
+        background-size: cover;
+      }
+    </style>
+  
+  </head>
+  <body>
+    <!--BOOTSTARP-->
+    <div id="navbar-placeholder"></div>
+
+    <div class="container my-5">
+        <h2 class="text-center">Which watch is for you?</h2>
+        <div class="text-center">
+        </div>
+
+    <!-- Questions Form -->
+    <form id="nbaForm" class="mb-5">
+        <div class="mb-3">
+          <h3>How do you prefer making a basket?</h3>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="answer1"
+              value="Going for a Layup"
+            />
+            <label class="form-check-label">Going for a Layup</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="answer1"
+              value="Taking a shot from midrange"
+            />
+            <label class="form-check-label">Taking a shot from midrange</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="answer1"
+              value="Taking a shot from 3"
+            />
+            <label class="form-check-label">Taking a shot from 3</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="answer1"
+              value="Dunking the ball"
+            />
+            <label class="form-check-label">Dunking the ball</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <h3>When being guarded do you?</h3>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="answer2"
+              value="Shoot"
+            />
+            <label class="form-check-label">Shoot</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="answer2"
+              value="Get past the opponent, and make a layup"
+            />
+            <label class="form-check-label"
+              >Get past the opponent, and make a layup</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="answer2"
+              value="Run through everyone, and do a layup or dunk"
+            />
+            <label class="form-check-label"
+              >Run through everyone, and do a layup or dunk</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="answer2"
+              value="Fake a shot, and pass"
+            />
+            <label class="form-check-label">Fake a shot, and pass</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+            <h3>When playing off the ball do you?</h3>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer3"
+                value="Stay under the hoop, and dunk it when you get the ball"
+              />
+              <label class="form-check-label">Stay under the hoop, and dunk it when you get the ball</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer3"
+                value="Shake off you defender, get the ball from a pass, and then shoot from midrange"
+              />
+              <label class="form-check-label"
+                >Shake off you defender, get the ball from a pass, and then shoot from midrange</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer3"
+                value="Get a screen from a teammate, and shoot a 3 from one of the corners"
+              />
+              <label class="form-check-label"
+                >Get a screen from a teammate, and shoot a 3 from one of the corners</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer3"
+                value="Shake off your defender, get the ball from a pass, and then go in for a layup, or a floater"
+              />
+              <label class="form-check-label">Shake off your defender, get the ball from a pass, and then go in for a layup, or a floater</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h3>In a game are you?</h3>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer4"
+                value="A Point Guard"
+              />
+              <label class="form-check-label">A Point Guard</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer4"
+                value="A Shooting Guard"
+              />
+              <label class="form-check-label"
+                >A Shooting Guard</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer4"
+                value="A Center"
+              />
+              <label class="form-check-label"
+                >A Center</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer4"
+                value="A Small Forward"
+              />
+              <label class="form-check-label">A Small Forward</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h3>Do you use a lot of dribble moves to get past opponents?</h3>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer5"
+                value="Yes"
+              />
+              <label class="form-check-label">Yes</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer5"
+                value="No"
+              />
+              <label class="form-check-label"
+                >No</label
+              >
+          </div>
+
+          <div class="mb-3">
+            <h3>When you have the ball do you?</h3>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer6"
+                value="Break their ankles"
+              />
+              <label class="form-check-label">Break their ankles</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer6"
+                value="Pass to a teammate, and then get the ball back after shaking the defence off, and then go for a layup"
+              />
+              <label class="form-check-label"
+                >Pass to a teammate, and then get the ball back after shaking the defence off, and then go for a layup</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer6"
+                value="Dribble a bit, and then shoot"
+              />
+              <label class="form-check-label"
+                >Dribble a bit, and then shoot</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer6"
+                value="Do a number of passes before getting the ball and either shooting, or going in for a layup"
+              />
+              <label class="form-check-label">Do a number of passes before getting the ball and either shooting, or going in for a layup</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h3>When you have the ball do you?</h3>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer7"
+                value="Break their ankles"
+              />
+              <label class="form-check-label">Break their ankles</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer7"
+                value="Pass to a teammate, and then get the ball back after shaking the defence off, and then go for a layup"
+              />
+              <label class="form-check-label"
+                >Pass to a teammate, and then get the ball back after shaking the defence off, and then go for a layup</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer7"
+                value="Dribble a bit, and then shoot"
+              />
+              <label class="form-check-label"
+                >Dribble a bit, and then shoot</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer7"
+                value="Do a number of passes before getting the ball and either shooting, or going in for a layup"
+              />
+              <label class="form-check-label">Do a number of passes before getting the ball and either shooting, or going in for a layup</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h3>In a fast break do you?</h3>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer8"
+                value="Run as fast as you can while dribbling, and go for a dunk, or a layup"
+              />
+              <label class="form-check-label">Run as fast as you can while dribbling, and go for a dunk, or a layup</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer8"
+                value="Pass to your teammates, and let them shoot, or go for a layup"
+              />
+              <label class="form-check-label"
+                >Pass to your teammates, and let them shoot, or go for a layup</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer8"
+                value="Run as fast as you can while dribbling, go to a certain spot on the court, and shoot a midrange"
+              />
+              <label class="form-check-label"
+                >Run as fast as you can while dribbling, go to a certain spot on the court, and shoot a midrange</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer8"
+                value="Run as fast as you can while dribbling, go to a certain spot on the court, and shoot a 3"
+              />
+              <label class="form-check-label">Run as fast as you can while dribbling, go to a certain spot on the court, and shoot a 3</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h3>Which NBA Team would you join?</h3>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer9"
+                value="San Francisco Warriors"
+              />
+              <label class="form-check-label">San Francisco Warriors</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer9"
+                value="Los Angeles Lakers"
+              />
+              <label class="form-check-label"
+                >Los Angeles Lakers</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer9"
+                value="Philadelphia 70 Sixers"
+              />
+              <label class="form-check-label"
+                >Philadelphia 70 Sixers</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer9"
+                value="Cleveland Cavaliers"
+              />
+              <label class="form-check-label">Cleveland Cavaliers</label
+                >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer9"
+                value="Chicago Bulls"
+             />
+          <label class="form-check-label">Chicago Bulls</label>
+        </div>
+      </div>
+
+          <div class="mb-3">
+            <h3>Which number do you prefer?</h3>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer10"
+                value="3"
+              />
+              <label class="form-check-label">3</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer10"
+                value="6"
+              />
+              <label class="form-check-label"
+                >6</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer10"
+                value="34"
+              />
+              <label class="form-check-label"
+                >34</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer10"
+                value="23"
+              />
+              <label class="form-check-label">23</label>
+            
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="answer2"
+                value="23"
+              />
+              <label class="form-check-label">30</label>
+          </div>
+
+        <div class="text-center mt-4">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            onclick="calculateResult()"
+          >
+            SUBMIT
+          </button>
+        </div>
+       
+        <div id="theresult" class="text-center text-white"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/Navbar.js"></script>
+  </body>
+</html>
