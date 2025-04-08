@@ -1,0 +1,85 @@
+/* buy.css */
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Navbar placeholder styling */
+#navbar-placeholder {
+  height: 60px;
+  background-color: #343a40; /* Dark gray for navbar */
+}
+
+/* Container styling */
+.container {
+  margin-top: 40px;
+}
+
+/* Row styling */
+.row {
+  background-color: #ffffff; /* White background for card */
+  border-radius: 8px;
+}
+
+/* Title styling */
+h1.display-4 {
+  color: #212529; /* Dark text color */
+}
+
+/* Apple Watch card styling */
+.rf-hcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #dee2e6; /* Light border */
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.rf-hcard-content-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.rf-hcard-img-wrapper img {
+  border-radius: 10px; /* Rounded corners for image */
+}
+
+/* Button styling */
+button.rf-hcard-secondary-cta {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ff7f50; /* Coral color for button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button.rf-hcard-secondary-cta:hover {
+  background-color: #e67345; /* Darker coral on hover */
+}
+
+/* Price section styling */
+.rf-hcard-scrim-price span.rc-prices-fullprice {
+  font-size: 1.2rem;
+}
+
+a.rf-hcard-cta {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a.rf-hcard-cta:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
