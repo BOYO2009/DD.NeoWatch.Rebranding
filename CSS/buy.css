@@ -83,3 +83,7 @@ a.rf-hcard-cta {
 a.rf-hcard-cta:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
+.card {
+  display: inline-block;
+  margin: 5px;
+}
