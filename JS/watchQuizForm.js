@@ -231,7 +231,7 @@ function calculateResult() {
   // Display result
   const resultDiv = document.getElementById("theresult");
   if (winningWatches.length === 1) {
-    resultDiv.innerHTML = `<h2>YOUR WATCH IS: ${formatWatchName(
+    resultDiv.innerHTML = `<h2>YOUR WATCH IS ${formatWatchName(
       winningWatches[0]
     )}</h2>`;
   } else {
